@@ -91,9 +91,9 @@ public class CalculatorControllerTest {
         calculatorDTO.setNum3(num3);
         calculatorDTO.setNum4(2.0);
 
-        ResponseEntity<Double> responseEntity = calculatorController.multiply(calculatorDTO);
-        assertEquals(1328.25, responseEntity.getBody());
-        assertEquals(HttpStatus.OK.value(), responseEntity.getStatusCodeValue(), "expecting the status as OK");
+        ResponseEntity<Double> responseEntity1 = calculatorController.multiply(calculatorDTO);
+        assertEquals(1328.25, responseEntity1.getBody());
+        assertEquals(HttpStatus.OK.value(), responseEntity1.getStatusCodeValue(), "expecting the status as OK");
 
     }
 }
