@@ -46,7 +46,7 @@ public class PropertyControllerTest {
         List<PropertyDTO> propertyList=new ArrayList<>();
         PropertyDTO dto=new PropertyDTO();
         dto.setTitle("Dummy Property");
-        dto.setId(1l);
+        dto.setId(2l);
         propertyList.add(dto);
         Mockito.when(propertyService.getAllProperties()).thenReturn(propertyList);
 
