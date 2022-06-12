@@ -14,4 +14,6 @@ public interface PropertyService {
     PropertyDTO updatePropertyDescription(@RequestBody PropertyDTO propertyDTO, Long propertyId) throws BusinessException;
     PropertyDTO updatePropertyPrice(@RequestBody PropertyDTO propertyDTO, Long propertyId);
     void deleteProperty(Long propertyId);
+
+    List<PropertyDTO> getAllPropertiesForUser(Long userId);
 }
